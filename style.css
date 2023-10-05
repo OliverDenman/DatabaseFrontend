@@ -1,0 +1,136 @@
+/*css for the main body of the webpage*/
+
+body {
+  font-family: Lato, sans-serif;
+  margin: 0;
+  background-color: #232e33;
+}
+
+/*css for the tables*/
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #757575;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Lato, sans-serif;
+  text-decoration: none;
+  color: #757575;
+  }
+
+th{
+  padding: 8px;
+}
+td{
+  padding: 8px;
+}
+
+/*main id for the tables*/
+
+#tablecss{
+  background-color: #192024;
+  padding: 15px;
+  position: fixed;
+  top: 460px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.div-3{
+  width: 731px;
+}
+
+/*css of the navigation bar*/
+
+#navbar {
+  width: 100%;
+  background-color: #192024;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1em 0;
+}
+
+li a {
+  position: absolute;
+  text-decoration: none;
+  color: #757575;
+  padding-right: 3em;
+  position: relative;
+  transition: all ease-in-out 250ms;
+}
+
+li a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.4em;
+  width: 0%;
+  background-color: #871140;
+  bottom: -1em;
+  transition: all ease-in-out 200ms;
+}
+
+li a:hover::after {
+  width: 70%;
+}
+
+li a:hover {
+  color: #871140;
+}
+
+li:first-child {
+  margin-right: auto;
+  margin-left: 3em;
+}
+
+/*css for the forms*/
+
+.search{
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #192024;
+  font-weight: bold;
+  vertical-align: baseline;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+input[type=submit] {
+  background-color: #757575;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  margin-left: 0.5em;
+  border: none;
+}
+
+input[type=submit]:hover {
+  background-color: #871140;
+}
+
+input[type=text]{
+  padding: 8px;
+  width: 15em;
+  border: none;
+}
+
+select{
+  margin-right: 0.5em;
+  border-radius: 8px;
+  padding: 10px;
+  border: none;
+}
